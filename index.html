@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>guessNumber</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="wrapper">
+            <header>
+                <h1>Zgadnij Liczbę</h1>
+                <p>Zagraj z komputerem i sprawdź kto pierwszy odgadnie jaka liczba została wylosowana z zakresu od 1 do 100. </p>
+            </header>
+            <main>
+                <section class="start">
+                    <p>Wylosuj liczbe:</p>
+                    <button>Losuj</button>
+                </section>
+                <section class="user">
+                    <h1>Użytkownik</h1>
+                    <form action="">
+                        <input type="number">
+                        <button>Sprawdź</button>
+                    </form>
+                    <p></p>
+                </section>
+                <section class="round">
+                    <h1>Tura:<span>0</span></h1>
+                </section>
+                <section class="AI">
+                    <h1>Komputer</h1>
+                    <p>Komputer sprawdzał liczbę:<span>-</span></p>
+                    <p class="numberAI"></p>
+                </section>
+                <section class="result">
+                    <p>Liczba gier:<span class="games">0</span></p>
+                    <p>Wygrane gry:<span class="win">0</span></p>
+                    <p>Przegrane gry:<span class="lost">0</span></p>
+                </section>
+            </main>
+    </div>
+    
+    <script src="js/result.js"></script>
+    <script src="js/checkNumber.js"></script>
+    <script src="js/drawNumberAI.js"></script>
+    <script src="js/game.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

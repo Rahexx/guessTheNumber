@@ -1,0 +1,221 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-image: url("../images/background.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  max-width: 1600px;
+}
+
+.wrapper {
+  min-height: 100vh;
+  width: 100vw;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+@media (min-width: 767px) and (orientation: portrait) {
+  body {
+    background-image: url("../images/background2.jpg");
+  }
+}
+
+@media (orientation: landscape) {
+  body {
+    background-image: url("../images/background2.jpg");
+  }
+}
+
+header {
+  font-family: 'Roboto', sans-serif;
+  color: white;
+}
+
+header h1 {
+  text-align: center;
+  padding: 20px 0;
+}
+
+header p {
+  text-align: center;
+  margin: 20px 0 0;
+}
+
+@media (min-width: 767px) and (orientation: portrait) {
+  header h1 {
+    padding-top: 25px;
+    font-size: 45px;
+  }
+  header p {
+    font-size: 25px\;;
+  }
+}
+
+@media (min-width: 532px) and (orientation: landscape) {
+  header p {
+    margin: 20px 15px;
+  }
+}
+
+main {
+  min-height: 30vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-family: 'Roboto', sans-serif;
+  color: white;
+}
+
+main h1 {
+  text-align: center;
+  margin: 15px 0;
+}
+
+main button {
+  height: 40px;
+  width: 60px;
+  margin: auto 0;
+  padding: 7px 5px;
+  border: 2px solid #3498db;
+  background-color: transparent;
+  border-radius: 24px;
+  color: white;
+}
+
+main button:focus {
+  outline: none;
+}
+
+main .start {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+main .start p {
+  line-height: 70px;
+  margin-right: 10px;
+}
+
+main .user form {
+  text-align: center;
+  margin: 10px auto;
+}
+
+main .user form input {
+  width: 15vw;
+}
+
+main .user form button {
+  width: 80px;
+}
+
+main .user p {
+  text-align: center;
+}
+
+main .AI {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-bottom: 10px;
+}
+
+main .AI p {
+  text-align: center;
+}
+
+main .result {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin-top: 10px;
+}
+
+@media (min-width: 767px) and (orientation: portrait) {
+  main .start {
+    margin-top: 20px;
+  }
+  main .start p {
+    font-size: 25px;
+  }
+  main .start button {
+    height: 60px;
+    width: 90px;
+    font-size: 20px;
+  }
+  main .user h1 {
+    font-size: 40px;
+  }
+  main .user form input {
+    height: 30px;
+  }
+  main .user form button {
+    margin-left: 10px;
+    height: 70px;
+    width: 100px;
+    font-size: 20px;
+  }
+  main .user p {
+    font-size: 30px;
+  }
+  main .round h1 {
+    font-size: 45px;
+  }
+  main .AI h1 {
+    font-size: 40px;
+  }
+  main .AI p {
+    font-size: 30px;
+  }
+  main .AI p span {
+    margin-left: 10px;
+  }
+  main .AI .numberAI {
+    margin-top: 15px;
+  }
+  main .result p {
+    font-size: 25px;
+  }
+  main .result p span {
+    margin-left: 10px;
+  }
+}
+
+@media (min-width: 532px) and (orientation: landscape) {
+  main .result {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  main .result p {
+    margin-bottom: 15px;
+    margin-right: 15px;
+  }
+}
+
+@media (min-width: 1024px) and (orientation: landscape) {
+  main .user form input {
+    width: 70px;
+  }
+}
+/*# sourceMappingURL=style.css.map */
