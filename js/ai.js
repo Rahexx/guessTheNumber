@@ -1,5 +1,6 @@
-class  AI{
-    constructor(){
+// Class operate  computer
+class AI {
+    constructor() {
         document.querySelector(".user button").addEventListener('click', this.drawAI.bind(this));
         this.numberAI = document.querySelector('.AI p span');
         this.AI = document.querySelector('.AI');
@@ -8,17 +9,17 @@ class  AI{
         let scoreAI = 0;
     }
 
-    drawAI(){
+    // Function that draws a number for the computer and and checks if the computer hit
+
+    drawAI() {
         this._choice = Math.floor(Math.random() * 100) + 1;
         this.numberAI.textContent = this._choice;
 
-        if(this._choice > game._number){
+        if (this._choice > game._number) {
             this.p.textContent = "Za duża";
-        }
-        else if(this._choice < game._number){
+        } else if (this._choice < game._number) {
             this.p.textContent = "Za mała";
-        }
-        else{
+        } else {
             this.p.textContent = "Trafiłeś";
             result.setResult(0);
         }
